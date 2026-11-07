@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="plus.css">
+        <title>PLusFun</title>
+    </head>
+
+    <h1> ADDING </h1>
+
+    <!-- Full Page Question Grid (12 Questions) -->
+    <div class="question-container">
+        <!-- Easy Questions (Green) -->
+        <div class="box easy" onclick="openPopup('modal1')"><p1>1</p1></div>
+        <div class="box easy" onclick="openPopup('modal2')"><p1>2</p1></div>
+        <div class="box easy" onclick="openPopup('modal3')"><p1>3</p1></div>
+        <div class="box easy" onclick="openPopup('modal4')"><p1>4</p1></div>
+
+        <!-- Medium Questions (Yellow) -->
+        <div class="box medium" onclick="openPopup('modal5')"><p1>5</p1></div>
+        <div class="box medium" onclick="openPopup('modal6')"><p1>6</p1></div>
+        <div class="box medium" onclick="openPopup('modal7')"><p1>7</p1></div>
+        <div class="box medium" onclick="openPopup('modal8')"><p1>8</p1></div>
+
+        <!-- Hard Questions (Red) -->
+        <div class="box hard" onclick="openPopup('modal9')"><p1>9</p1></div>
+        <div class="box hard" onclick="openPopup('modal10')"><p1>10</p1></div>
+        <div class="box hard" onclick="openPopup('modal11')"><p1>11</p1></div>
+        <div class="box hard" onclick="openPopup('modal12')"><p1>12</p1></div>
+    </div>
+
+    <!-- Modals for Easy Questions -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal1')">&times;</span>
+            <h2>Question 1 (Easy)</h2>
+            <p>What is 2 + 2?</p>
+            <input type="number" id="answer1">
+            <button onclick="checkAnswer('answer1', 'result1', 4)">Submit</button>
+            <p id="result1"></p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal2')">&times;</span>
+            <h2>Question 2 (Easy)</h2>
+            <p>What is 5 + 3?</p>
+            <input type="number" id="answer2">
+            <button onclick="checkAnswer('answer2', 'result2', 8)">Submit</button>
+            <p id="result2"></p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal3')">&times;</span>
+            <h2>Question 3 (Easy)</h2>
+            <p>What is 7 + 6?</p>
+            <input type="number" id="answer3">
+            <button onclick="checkAnswer('answer3', 'result3', 13)">Submit</button>
+            <p id="result3"></p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal4')">&times;</span>
+            <h2>Question 4 (Easy)</h2>
+            <p>What is 9 + 4?</p>
+            <input type="number" id="answer4">
+            <button onclick="checkAnswer('answer4', 'result4', 13)">Submit</button>
+            <p id="result4"></p>
+        </div>
+    </div>
+
+    <!-- Modals for Medium Questions -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal5')">&times;</span>
+            <h2>Question 5 (Medium)</h2>
+            <p>What is 15 + 27?</p>
+            <input type="number" id="answer5">
+            <button onclick="checkAnswer('answer5', 'result5', 42)">Submit</button>
+            <p id="result5"></p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal6')">&times;</span>
+            <h2>Question 6 (Medium)</h2>
+            <p>What is 34 + 58?</p>
+            <input type="number" id="answer6">
+            <button onclick="checkAnswer('answer6', 'result6', 92)">Submit</button>
+            <p id="result6"></p>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal7')">&times;</span>
+            <h2>Question 7 (Medium)</h2>
+            <p>What is 63 + 29?</p>
+            <input type="number" id="answer7">
+            <button onclick="checkAnswer('answer7', 'result7', 92)">Submit</button>
+            <p id="result7"></p>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal8')">&times;</span>
+            <h2>Question 8 (Medium)</h2>
+            <p>What is 81 + 45?</p>
+            <input type="number" id="answer8">
+            <button onclick="checkAnswer('answer8', 'result8', 126)">Submit</button>
+            <p id="result8"></p>
+        </div>
+    </div>
+
+    <!-- Modals for Hard Questions -->
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal9')">&times;</span>
+            <h2>Question 9 (Hard)</h2>
+            <p>What is 148 + 375?</p>
+            <input type="number" id="answer9">
+            <button onclick="checkAnswer('answer9', 'result9', 523)">Submit</button>
+            <p id="result9"></p>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal10')">&times;</span>
+            <h2>Question 10 (Hard)</h2>
+            <p>What is 689 + 457?</p>
+            <input type="number" id="answer10">
+            <button onclick="checkAnswer('answer10', 'result10', 1146)">Submit</button>
+            <p id="result10"></p>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal11')">&times;</span>
+            <h2>Question 11 (Hard)</h2>
+            <p>What is 829 + 674?</p>
+            <input type="number" id="answer11">
+            <button onclick="checkAnswer('answer11', 'result11', 1503)">Submit</button>
+            <p id="result11"></p>
+        </div>
+    </div>
+
+    <div id="modal12" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePopup('modal12')">&times;</span>
+            <h2>Question 12 (Hard)</h2>
+            <p>What is 1254 + 889?</p>
+            <input type="number" id="answer12">
+            <button onclick="checkAnswer('answer12', 'result12', 2143)">Submit</button>
+            <p id="result12"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</html>
